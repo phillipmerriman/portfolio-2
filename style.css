@@ -1,0 +1,115 @@
+
+/*GENERAL STYLES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #e9ecef;
+}
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 10px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+main h3 {
+  font-size: 22px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+main p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
+
+/*HEADER*/
+
+header {
+  height: 90px;
+  background-color: #33415c;
+  background-image: url(images/texture-1306790_1920.jpg);
+  margin-bottom: 40px;
+  display: block;
+}
+
+header h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: lucida console;
+  font-size: 56px;
+}
+
+/* MAIN */
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 24px;
+  color: #212529;
+}
+
+/* GROUPS & ITEMS (MOBILE FIRST) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* GROUPS & ITEMS (DESKTOP) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* HOME/PORTFOLIO/CONTACT ARTICLE SECTIONS */
+
+#home, #portfolio, #contact {
+  margin-bottom: 120px;
+}
+
+/* ABOUT ARTICLE SECTION */
+
+#about {
+  background-image: url(images/texture-1306790_1920.jpg);
+  color: whitesmoke;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
